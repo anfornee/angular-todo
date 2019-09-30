@@ -1,0 +1,28 @@
+<div>
+    <div class="currentTaskHeader">more details...</div>
+    <div class="container">
+        <div *ngFor="let task of tasks" class="taskContainer">
+            <div class="taskTitle">
+                {{ task.title }}
+            </div>
+            <div class="taskTime">
+                {{ task.timeToComplete }}
+            </div>
+            <div class="imageContainer">
+                <div>
+                    <img (click)="onClickDelete()" src="../../../../../assets/complete.png" />
+                </div>
+                <div>
+                    <img routerLink="selected-task/:taskid" routerLinkActive="active"
+                        src="../../../../../assets/more-info.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="buttonContainer">
+        <div class="button">
+            <a routerLink="task-list" routerLinkActive="active">Couldn't get this to work :( With about 30 more minutes I could've had it</a>
+        </div>
+    </div>
+</div>

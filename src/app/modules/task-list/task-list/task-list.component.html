@@ -1,0 +1,46 @@
+<div class="tasks">
+  <div class="taskContainer">
+    <div class="taskListHeader">Task:</div>
+    <app-current-task *ngFor="let task of tasks" [task]='task' (taskCompleted)='onTaskComplete($event)'>
+    </app-current-task>
+  </div>
+  <div class="newTaskForm">
+    <div class="formContainer">
+      <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+
+        <div class="taskTitle">
+          <label for="taskTitle">New Task:</label>
+          <br>
+          <input id="taskTitle" type="text" name="title" [(ngModel)]="model.title" />
+        </div>
+
+        <div class="taskTime">
+          <label for="timeToComplete">Completed By:</label>
+          <br>
+          <input id="timeToComplete" type="text" name="timeToComplete" [(ngModel)]='model.timeToComplete' />
+        </div>
+
+        <div class="description">
+          <label for="description">Description:</label>
+          <br>
+          <textarea rows="1" id="description" name="dateToComplete" [(ngModel)]="model.description"></textarea>
+        </div>
+
+        <div class="itemsNeeded">
+          <label for="itemsNeeded">Items Needed:</label>
+          <br>
+          <textarea rows="1" id="itemsNeeded" name="itemsNeeded" [(ngModel)]="model.itemsNeeded"></textarea>
+        </div>
+
+        <div class="btnContainer">
+          <button type="submit">Add task!</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!--<div class="addTask">
+    <img routerLink="new-task" routerLinkActive="active" src="../../../../assets/add.png" />
+  </div>-->
+</div>

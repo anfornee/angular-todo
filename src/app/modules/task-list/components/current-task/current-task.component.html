@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="taskContainer">
+    <div class="taskTitle">
+      {{ task.title }}
+    </div>
+    <div class="taskTime">
+      {{ task.timeToComplete }}
+    </div>
+    <div class="imageContainer">
+      <div>
+        <img (click)="onClickDelete()" src="../../../../../assets/complete.png" />
+      </div>
+      <!-- <div>
+        <img (click)="goToSelectedTask()" src="../../../../../assets/more-info.png" />
+      </div> -->
+    </div>
+  </div>
+
+</div>
+<router-outlet></router-outlet>

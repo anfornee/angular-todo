@@ -1,0 +1,80 @@
+.currentTaskHeader {
+    margin-top: 50px;
+    font-family: Avenir, sans-serif;
+    text-transform: lowercase;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    justify-content: center;
+
+}
+
+.taskContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+    width: 500px;
+    background-color: rgb(255, 251, 234);
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.taskTitle {
+    max-width: 250px;
+    min-width: 150px;
+    font-family: Avenir, sans-serif;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.taskTime {
+    font-family: Avenir, sans-serif;
+    text-transform: lowercase;
+}
+
+img {
+    padding-top: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+img:hover {
+    height: 28px;
+    width: 28px;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px;
+    text-decoration: none;
+    width: 275px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Avenir, sans-serif;
+    font-weight: bolder;
+    background-color: #00adb3;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: #018d92;
+}
